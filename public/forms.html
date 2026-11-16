@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><meta name="robots" content="noindex" /><title>Form registration</title></head>
+  <body>
+    <!-- Static registrations for Netlify Forms. Field names must match the React forms exactly. -->
+    <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="newsletter" />
+      <input name="email" type="email" />
+      <input name="bot-field" />
+    </form>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" /><input name="email" type="email" /><input name="phone" />
+      <input name="subject" /><textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+    <form name="volunteer" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="volunteer" />
+      <input name="name" /><input name="email" type="email" /><input name="phone" />
+      <input name="location" /><input name="interest" /><input name="availability" />
+      <textarea name="skills"></textarea>
+      <input name="bot-field" />
+    </form>
+    <form name="partnership" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="partnership" />
+      <input name="organisation" /><input name="name" /><input name="email" type="email" />
+      <input name="phone" /><input name="type" /><textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
